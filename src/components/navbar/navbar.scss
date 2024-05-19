@@ -1,0 +1,23 @@
+#navbar {
+  background: rgb(225, 221, 221);
+  min-height: 3rem;
+  max-height: 3rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .buttons-container {
+    width: 28%;
+    .save {
+      border: 1px solid rgb(75, 75, 254);
+      background: white;
+      font-weight: bold;
+      font-size: 0.8rem;
+      color: rgb(75, 75, 254);
+    }
+    .moonIcon {
+      font-size: 1.5rem;
+      margin-right: 5rem;
+    }
+  }
+}

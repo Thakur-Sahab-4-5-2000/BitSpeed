@@ -1,0 +1,94 @@
+.flow-content {
+  min-height: 93vh;
+  max-height: 93vh;
+  margin-top: 50px;
+}
+.node-container {
+  border: 1px solid rgb(221, 216, 216);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.node-header {
+  background: #51e1bf;
+  padding: 5px;
+  border-radius: 6px 6px 0 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .chatIcon,
+  .whatsAppIcon {
+    font-size: 1rem;
+    color: #0a0101;
+  }
+
+  .header-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #0a0101;
+  }
+
+  .whatsAppIcon {
+    margin-left: auto;
+  }
+}
+
+.input-field {
+  margin-top: 13px;
+  padding: 2px;
+  border: none;
+  font-size: 0.9rem;
+  width: calc(100% - 22px);
+  margin: 0 10px 10px 10px;
+  box-sizing: border-box;
+  &:hover {
+    border: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.rightSide {
+  background: rgb(252, 252, 252);
+  border-top: 1px solid #5e5c5c;
+  border-left: 1px solid #5e5c5c;
+  margin-top: 49px;
+  .drag-drop-container {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    height: 1rem;
+    border: 1px solid rgb(75, 75, 254);
+    color: rgb(75, 75, 254);
+    background: white;
+    width: 40%;
+    padding: 2rem;
+
+    .chatIconRight {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.custom-edge-button {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-edge-button:hover {
+  background-color: #e84118;
+}
