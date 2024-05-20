@@ -22,7 +22,7 @@ export default function CustomEdge({ id, sourceX, sourceY, targetX, targetY }) {
       <EdgeLabelRenderer>
         <button
           onClick={() => setEdges((edges) => edges.filter((e) => e.id !== id))}
-          className="custom-edge-button" // Apply CSS class for styling
+          className="custom-edge-button"
           style={{
             position: "absolute",
             transform: `translate(-50%, -50%) translate(${labelX}px, ${labelY}px)`,

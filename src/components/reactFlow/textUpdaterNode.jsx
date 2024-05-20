@@ -7,12 +7,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import "./reactFlow.scss";
 
 // eslint-disable-next-line react/prop-types
-function TextUpdaterNode({ data }) {
-  const [inputText, setInputText] = useState(data?.label);
-  const onChange = useCallback((evt) => {
-    setInputText(evt.target.value);
-  }, []);
-
+function TextUpdaterNode({ id, data, onClick, text }) {
+  const handleClick = () => {
+    onClick(id);
+  };
   return (
     <>
       <Handle type="target" position={Position.Left} />
@@ -27,9 +25,10 @@ function TextUpdaterNode({ data }) {
         <input
           id="text"
           name="text"
-          onChange={onChange}
           className="nodrag input-field"
-          value={inputText}
+          value={text || data?.label}
+          onClick={handleClick}
+          readOnly
         />
       </div>
       <Handle type="source" position={Position.Right} />

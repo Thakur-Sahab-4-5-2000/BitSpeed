@@ -11,6 +11,11 @@ function Navbar({ nodes, edges }) {
       return isNodeConnected;
     });
 
+    if (nodes.length === 0 || edges.length === 0) {
+      toast.error("There is nothing to save");
+      return;
+    }
+
     if (!allNodesConnected) {
       toast.error("Not all nodes are connected.");
       return;
@@ -18,7 +23,7 @@ function Navbar({ nodes, edges }) {
     localStorage.clear();
     localStorage.setItem("nodes", JSON.stringify(nodes));
     localStorage.setItem("edges", JSON.stringify(edges));
-    toast.success("Changes have been saved to local storage!");
+    toast.success("Changes have been saved!");
   };
   return (
     <div

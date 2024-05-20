@@ -55,6 +55,7 @@
   &:focus {
     outline: none;
   }
+  cursor: pointer;
 }
 
 .rightSide {
@@ -91,4 +92,33 @@
 
 .custom-edge-button:hover {
   background-color: #e84118;
+}
+
+.heading-container {
+  padding: 0.5rem;
+  border-bottom: 1px solid #5e5c5c;
+  position: relative;
+  .back-arrow {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+  }
+}
+
+.text-field-container {
+  padding: 4px;
+  border-bottom: 1px solid #5e5c5c;
+  margin-top: 1rem;
+  .text-field {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .MuiInputBase-root {
+      word-wrap: break-word;
+    }
+  }
+  span {
+    color: rgb(156, 155, 155);
+  }
 }
