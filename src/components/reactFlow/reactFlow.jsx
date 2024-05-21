@@ -67,6 +67,19 @@ function ReactFlowComponent() {
     [setNodes]
   );
 
+  const deleteNodeAndEdges = useCallback(
+    (id) => {
+      const filteredNodes = nodes.filter((node) => node.id !== id);
+      const filteredEdges = edges.filter(
+        (edge) => edge.source !== id && edge.target !== id
+      );
+      setNodes(filteredNodes);
+      setEdges(filteredEdges);
+      localStorage.removeItem("nodeId");
+    },
+    [nodes, edges, setNodes, setEdges]
+  );
+
   const onNodesChange = useCallback(
     (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
     []
@@ -149,6 +162,7 @@ function ReactFlowComponent() {
               setNodeId={setNodeId}
               setIsDrawerOpen={setIsDrawerOpen}
               updateLabelOfNode={updateLabelOfNode}
+              deleteNodeAndEdges={deleteNodeAndEdges}
             />
           ) : (
             <RightSideItem
