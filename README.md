@@ -16,6 +16,7 @@ This project is a flow diagram editor built with React and `react-flow`, allowin
 - react-dnd
 - react-toastify
 - Material-UI Icons
+- Bootstrap
 
 ## Getting Started
 
@@ -30,8 +31,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. Clone the repository:
    ```bash
+   mkdir react-flow-diagram-editor
    cd react-flow-diagram-editor
-   git clone https://github.com/yourusername/react-flow-diagram-editor.git](https://github.com/Thakur-Sahab-4-5-2000/BitSpeed.git
+   git clone https://github.com/Thakur-Sahab-4-5-2000/BitSpeed.git
 
 2. Install Dependencies
    ```bash
