@@ -30,6 +30,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/react-flow-diagram-editor.git
+   git clone https://github.com/yourusername/react-flow-diagram-editor.git](https://github.com/Thakur-Sahab-4-5-2000/BitSpeed.git
    cd react-flow-diagram-editor
 
