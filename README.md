@@ -16,6 +16,7 @@ This project is a flow diagram editor built with React and `react-flow`, allowin
 - react-dnd
 - react-toastify
 - Material-UI Icons
+- Bootstrap
 
 ## Getting Started
 
