@@ -1,4 +1,4 @@
-# React Flow Diagram Editor
+# BiteSpeed Frontend Task: Chatbot flow builder
 
 This project is a flow diagram editor built with React and `react-flow`, allowing users to create and manage nodes and edges in a visual interface. Users can drag and drop nodes, connect them with edges, and update node labels dynamically.
 
